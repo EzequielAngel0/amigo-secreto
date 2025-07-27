@@ -8,7 +8,15 @@ function agregarAmigo() {
 
     // Validar que no esté vacío
     if (nombre === "") {
-        alert("Por favor, escribe un nombre válido.");
+        alert("Por favor, escribe un nombre.");
+        return;
+    }
+
+    // Validar que solo tenga letras A-Z y espacios
+    const regex = /^[A-Za-z\s]+$/;
+
+    if (!regex.test(nombre)) {
+        alert("El nombre no puede tener carácteres especiales ni numeros.");
         return;
     }
 
@@ -24,6 +32,8 @@ function agregarAmigo() {
     // Limpiar el input
     input.value = "";
 }
+
+
 
 // Función para hacer el sorteo aleatorio
 function sortearAmigo() {
