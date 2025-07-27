@@ -24,23 +24,3 @@ function agregarAmigo() {
     // Limpiar el input
     input.value = "";
 }
-
-// Función para hacer el sorteo aleatorio
-function sortearAmigo() {
-    if (amigos.length === 0) {
-        alert("Primero debes añadir al menos un amigo.");
-        return;
-    }
-
-    // Elegir un nombre aleatorio
-    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
-    const amigoSorteado = amigos[indiceAleatorio];
-
-    // Mostrar resultado
-    const resultado = document.getElementById('resultado');
-    resultado.innerHTML = ""; // Limpiar resultados anteriores
-
-    const item = document.createElement('li');
-    item.textContent = `El amigo secreto es: ${amigoSorteado}`;
-    resultado.appendChild(item);
-}
