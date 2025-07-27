@@ -33,6 +33,8 @@ Ideal para juegos entre amigos, familia o compañeros de trabajo.
 - El mensaje se sobrescribe en pantalla.
 - Al terminar los sorteos, se limpia automáticamente la lista.
 
+![Demostración](assets/amigo-secreto.gif)
+
 ---
 
 ## 🔗 Acceso al Proyecto
